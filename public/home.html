@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<!-- <link href="https://habittracker-53909.web.app/style.css" rel="stylesheet"> -->
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Groove</title>
+</head>
+
+<body>
+
+    <video autoplay muted loop id="myVideo">
+        <!--Reach out to me for background video... video size was too big for github.-->
+        <source src="" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    <div class="center">
+        <div id="MyClockDisplay" class="clock" onload="showTime()" style="color: black;"></div>
+        <button class="button" id="myBtn">End Day</button>
+    </div>
+
+    <div class="absolute">
+
+        <p class="p-Right">Select habits you have completed</p>
+        <table>
+            <tr>
+                <td style="color: black;">
+                    <button class="circle">🧠</button> Meditate
+                </td>
+                <td style="color: black;">
+                    <button class="circle">🏃‍♂️</button> Run
+                </td>
+                <td style="color: black;">
+                    <button class="circle" style="color: black;">+</button> Add
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <div class="bottom-left">
+       <!-- <p onclick="window.location.href='https://habittracker-53909.web.app/chart.html'" class="p-Left" style="color: black;">Analytics</p> -->
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 class="h2Alt">Vital Check</h2>
+            </div>
+
+
+            <div class="modal-footer">
+                <table style="text-align: center;">
+                    <tr>
+                        <td>
+                            <p class="pAlt">How happy are you?</p>
+                        </td>
+
+                        <td>
+                            <button onclick="myFunction()" class="radioButtonUnselected">1</button>
+                        </td>
+                        <td>
+                            <button class="radioButtonUnselected">2</button>
+                        </td>
+                        <td>
+                            <button class="radioButtonUnselected">3</button>
+                        </td>
+                        <td>
+                            <button class="radioButtonUnselected">4</button>
+                        </td>
+                        <td>
+                            <button class="radioButtonUnselected">5</button>
+                        </td>
+                        <td>
+                            <button class="radioButtonUnselected">6</button>
+                        </td>
+                        <td>
+                            <button class="radioButtonUnselected">7</button>
+                        </td>
+                        <td>
+                            <button class="radioButtonUnselected">8</button>
+                        </td>
+                        <td>
+                            <button class="radioButtonUnselected">9</button>
+                        </td>
+                        <td>
+                            <button class="radioButtonUnselected" id="radio10">10</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="pAlt">Did you drink?</p>
+                        </td>
+
+                        <td>
+                            <button onclick="myFunction()" class="radioButtonUnselected">Yes</button>
+                        </td>
+                        <td>
+                            <button class="radioButtonUnselected">No</button>
+                        </td>
+
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+  <!--  <script src="https://habittracker-53909.web.app/script.js"></script> -->
+  <!--  <script type="module" src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script> -->
+  <!--  <script type="module" src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script> -->
+
+</body>
+
+</html>
