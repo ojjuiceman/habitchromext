@@ -1,0 +1,26 @@
+{
+    "manifest_version" : 2,
+    "name" : "Habit Tracker",
+    "version" : "1.0",
+    "description" : "Calculate Anywhere",
+    "permissions" : [
+      "activeTab",
+      "<all_urls>",
+      "tabs"
+    ],
+    "background" : {
+      "page": "./public/background.html",
+      "persistent": false
+    },
+    "content_scripts": [
+        {
+           "matches": ["<all_urls>"],
+           "js": ["public/firebase.js"],
+           "run_at": "document_end"
+        }
+    ],
+    "browser_action" : {
+        "default_popup" : "/public/background.html"
+    },
+    "content_security_policy": "script-src 'self' https://www.gstatic.com/ https:/*.firebaseio.com https://googleapis.com; object-src 'self'"
+}
